@@ -29,7 +29,7 @@ limitations under the License.
    --border-dim: #666;
    --border-bright: var(--primary);
 
-   --text-bright: #888;
+   --text-bright: #EEE;
    --text-special: var(--primary);
 
    --scrollbar-background: #000;
@@ -95,7 +95,6 @@ body:not(.loading) #team_menu:active {
 }
 
 /* Channel with unread messages */
-.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__section_heading_label--clickable:hover,
@@ -121,7 +120,7 @@ ts-jumper input[type="text"],
 .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider:before, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before {
     background: var(--background);
 }
-.p-message_pane__limited_history_foreword {	
+.p-message_pane__limited_history_foreword {
     color: var(--text);
 	background: var(--background-elevated);
 }
@@ -259,6 +258,7 @@ li.active[class] span,
    background-color: var(--border-bright) !important;
    border-color: var(--text-bright);
    color: var(--text-bright);
+   font-weight: 1000;
 }
 
 /*also add border to unread count for individual channels*/
@@ -1139,7 +1139,7 @@ ts-jumper ts-jumper-container {
 }
 .c-search_autocomplete__suggestion_content .c-channel_name .c-deprecated-icon, .c-search_autocomplete__suggestion_content .c-search_autocomplete__suggestion_icon, .c-search_autocomplete__suggestion_content .c-search_autocomplete__suggestion_text .filetype_description,
 .c-search_autocomplete__suggestion_content .c-search_autocomplete__suggestion_text .token
-{ 
+{
 	color: var(--text);
 }
 
@@ -1220,7 +1220,7 @@ ts-jumper ts-jumper-container {
 .p-apps_browser__app_limit_meter__blank_app_box {
     background-color: var(--background-hover);
 }
-.p-apps_browser__app--selected {	
+.p-apps_browser__app--selected {
     background: var(--background-hover);
 }
 /** menus **/
@@ -1331,7 +1331,7 @@ ts-jumper ts-jumper-container {
     background: var(--background);
 }
 .p-downloads_list__shift_hint {
-    background: linear-gradient(180deg,hsla(0,0%,100%,0),var(--background)); 
+    background: linear-gradient(180deg,hsla(0,0%,100%,0),var(--background));
 }
 .p-download_item {
     border: 1px solid var(--border-dim);
@@ -1367,7 +1367,7 @@ nav {
     background: var(--background-elevated);
 }
 
-.pmu-days * { 
+.pmu-days * {
    border: 1px solid var(--border-dim);
 }
 /* history loading */
@@ -1428,7 +1428,7 @@ nav {
     border: 1px solid var(--border-dim);
 }
 #client-ui .file_list_item .monospace {
-    color: var(--text);	
+    color: var(--text);
 }
 .c-pillow_file_container {
     background: var(--background);
@@ -1493,7 +1493,7 @@ nav {
 /* browse apps */
 .c-filter_input, .p-apps_browser__category_header {
     background: var(--background-elevated);
-}	
+}
 .p-apps_browser__category_header {
 	color: var(--text);
 }
@@ -1509,7 +1509,7 @@ nav {
     background: var(--background-elevated);
 }
 .tab_complete_ui ul.type_members .unify_broadcast {
-	color: var(--text);	
+	color: var(--text);
 }
 .c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover {
     background: var(--background-elevated);
@@ -1518,7 +1518,7 @@ nav {
 /* message thumbs up */
 .c-reaction {
     background: var(--background);
-    border: 1px solid var(--border-dim); 	
+    border: 1px solid var(--border-dim);
 }
 .c-reaction__count {
 	color: var(--text-bright);
@@ -1604,4 +1604,21 @@ ts-jumper .p-jumper__help {
 /* message not allowed */
 #msg_input_message {
 	background-color: var(--bacground-elevated);
+}
+
+.internal_im_link,
+.c-button.c-button--outline {
+	color: var(--text) !important;
+}
+
+.member_details_over_image {
+	text-shadow: 0 0 8px var(--background);
+}
+
+.member_details_over_image .member_name {
+	color: var(--background-light) !important;
+}
+
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name {
+	color: var(--primary) !important;
 }
