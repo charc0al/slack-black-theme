@@ -1632,3 +1632,7 @@ ts-jumper .p-jumper__help {
 .p-channel_sidebar__badge.c-mention_badge {
 	background-color: var(--unread-color) !important;
 }
+
+.c-reaction__count {
+  color: var(--text) !important;
+}
