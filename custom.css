@@ -1633,6 +1633,7 @@ ts-jumper .p-jumper__help {
 	background-color: var(--unread-color) !important;
 }
 
-.c-reaction__count {
+.c-reaction__count,
+.p-message_pane__foreword__description {
   color: var(--text) !important;
 }
