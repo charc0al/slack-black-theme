@@ -1625,7 +1625,9 @@ ts-jumper .p-jumper__help {
 	color: var(--primary) !important;
 }
 
-.c-presence--active {
+#presence.active:before,
+.c-presence--active,
+.presence.active {
   color: var(--active) !important;
 }
 
