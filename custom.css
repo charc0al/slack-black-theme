@@ -1636,6 +1636,9 @@ ts-jumper .p-jumper__help {
 }
 
 .c-reaction__count,
-.p-message_pane__foreword__description {
+.p-message_pane__foreword__description,
+.c-message_kit__file__meta,
+.c-message_kit__file__meta__text,
+.CodeMirror-code>div:before {
   color: var(--text) !important;
 }
